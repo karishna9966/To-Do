@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+
+.app {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 550px;
+  border: 2px solid #d0d7e2;
+}
+
+h1 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f8f9fc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6a1b9a;
+}
+
+button {
+  padding: 10px 16px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #9c27b0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task {
+  background: #f2f5ff;
+  padding: 12px 15px;
+  border: 1px solid #dce3f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.task.done {
+  background-color: #dcedc8;
+}
+
+.task.done span {
+  text-decoration: line-through;
+  color: #4b4b4b;
+}
+
+.task span {
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.actions button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+}
+
+.actions button:nth-child(1) {
+  background: #66bb6a; /* Complete */
+  color: white;
+}
+.actions button:nth-child(1):hover {
+  background: #43a047;
+}
+
+.actions button:nth-child(2) {
+  background: #ffca28; /* Edit */
+  color: black;
+}
+.actions button:nth-child(2):hover {
+  background: #fbc02d;
+}
+
+.actions button:nth-child(3) {
+  background: #ef5350; /* Delete */
+  color: white;
+}
+.actions button:nth-child(3):hover {
+  background: #e53935;
+}
